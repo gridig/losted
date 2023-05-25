@@ -1,15 +1,15 @@
 migrate((db) => {
   const collection = new Collection({
-    "id": "nshvoo61q4vfp6p",
-    "created": "2023-05-24 17:25:54.608Z",
-    "updated": "2023-05-24 17:25:54.608Z",
-    "name": "note",
+    "id": "hcv5a2ycnvibxv8",
+    "created": "2023-05-25 10:19:34.275Z",
+    "updated": "2023-05-25 10:19:34.275Z",
+    "name": "notes",
     "type": "base",
     "system": false,
     "schema": [
       {
         "system": false,
-        "id": "bbrgxued",
+        "id": "pzkmg3f8",
         "name": "title",
         "type": "text",
         "required": false,
@@ -22,7 +22,7 @@ migrate((db) => {
       },
       {
         "system": false,
-        "id": "tkgahenz",
+        "id": "eajtg1xy",
         "name": "content",
         "type": "text",
         "required": false,
@@ -35,18 +35,18 @@ migrate((db) => {
       }
     ],
     "indexes": [],
-    "listRule": null,
-    "viewRule": null,
-    "createRule": null,
-    "updateRule": null,
-    "deleteRule": null,
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": "",
     "options": {}
   });
 
   return Dao(db).saveCollection(collection);
 }, (db) => {
   const dao = new Dao(db);
-  const collection = dao.findCollectionByNameOrId("nshvoo61q4vfp6p");
+  const collection = dao.findCollectionByNameOrId("hcv5a2ycnvibxv8");
 
   return dao.deleteCollection(collection);
 })
