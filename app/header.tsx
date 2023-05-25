@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const headerData = [
   { id: 0, url: '/', title: 'home' },
-  { id: 1, url: '/about', title: 'about' },
+  { id: 1, url: '/notes', title: 'notes' },
 ];
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
             <Link
               href={link.url}
             >
-              <p className={`m-0 max-w-[30ch] text-sm`}>{link.title}</p>
+              <p className={'m-0 max-w-[30ch] text-sm'}>{link.title}</p>
             </Link>
           </li>
         ))}
